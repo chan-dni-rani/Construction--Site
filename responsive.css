@@ -1,0 +1,461 @@
+/* ===========================
+   RESPONSIVE STYLES
+   SteelRise Construction
+=========================== */
+
+/* ===========================
+   BREAKPOINT: Desktop & Large Tablet (1024px)
+=========================== */
+@media (max-width: 1024px) {
+    /* Container */
+    .container { padding: 0 1.5rem; }
+
+    /* Home Page grids */
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 3.5rem;
+    }
+
+    .about-img-main {
+        height: 400px;
+    }
+
+    .about-badge {
+        right: 1rem;
+        bottom: 1rem;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 250px 250px 250px;
+    }
+
+    .project-card:first-child {
+        grid-row: 1 / 2;
+        grid-column: 1 / 3;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+    }
+
+    .cta-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cta-actions { justify-content: center; }
+
+    .services-header,
+    .projects-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    /* About Page grids */
+    .story-grid {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .story-img-main {
+        height: 400px;
+    }
+
+    .story-year-badge {
+        top: 1rem;
+        right: 1rem;
+        width: 110px;
+        height: 110px;
+        padding: 1rem;
+    }
+
+    .story-year-badge .year {
+        font-size: 2rem;
+    }
+
+    .story-accent-box {
+        bottom: 1rem;
+        left: 1rem;
+        padding: 0.8rem 1.2rem;
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Services Page grids */
+    .services-full-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Service cards column layout for tablets */
+    .service-full-card {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 2rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .process-steps {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    /* Contact Page grids */
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+
+/* ===========================
+   BREAKPOINT: Mobile & Small Tablet (768px)
+=========================== */
+@media (max-width: 768px) {
+    /* Navigation */
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+
+    /* Hero */
+    .hero {
+        padding-top: 100px;
+        min-height: auto;
+        padding-bottom: 4rem;
+    }
+    
+    .hero-title {
+        font-size: clamp(2.8rem, 8vw, 4.5rem);
+    }
+
+    .hero-stats {
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        margin-top: 3rem;
+    }
+
+    .hero-number { display: none; }
+
+    /* Home Grids */
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+        .service-full-card {
+        flex-direction: column;
+        gap: 1.2rem;
+        padding: 2rem;
+    }
+
+    .service-full-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+
+    .service-full-body h3 {
+        font-size: 1.2rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .project-card {
+        height: 240px;
+    }
+
+    .project-card:first-child {
+        grid-row: auto;
+        grid-column: auto;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .about-features {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .hero-actions .btn-primary,
+    .hero-actions .btn-outline {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    /* Page Hero Background Text */
+    .page-hero-bg-text {
+        font-size: 8rem;
+    }
+
+    /* About Section placeholders/images */
+    .about-img-placeholder,
+    .about-img-main {
+        height: 320px;
+    }
+
+    .about-badge {
+        width: 100px;
+        height: 100px;
+        padding: 1rem;
+    }
+
+    .about-badge-num {
+        font-size: 1.8rem;
+    }
+
+    .about-badge-text {
+        font-size: 0.6rem;
+    }
+
+    /* About Page specific layout adjustments */
+    .story-img-placeholder,
+    .story-img-main {
+        height: 320px;
+    }
+    
+    .story-year-badge {
+        width: 90px;
+        height: 90px;
+        padding: 0.8rem;
+    }
+    
+    .story-year-badge .year {
+        font-size: 1.6rem;
+    }
+
+    .story-year-badge .since {
+        font-size: 0.6rem;
+    }
+    
+    .story-accent-box {
+        padding: 0.6rem 1rem;
+    }
+
+    .story-accent-box strong {
+        font-size: 1.3rem;
+    }
+
+    .story-accent-box span {
+        font-size: 0.65rem;
+    }
+
+    .timeline {
+        padding-left: 1.5rem;
+    }
+    
+    .timeline-item::before {
+        left: -1.5rem; /* Aligns exactly with timeline padding-left */
+        width: 12px;
+        height: 12px;
+    }
+    
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .value-card {
+        padding: 2rem 1.5rem;
+    }
+
+    /* Services Page */
+    /* Additional mobile adjustments */
+    .process-steps {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .why-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .cta-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .cta-actions {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .process-steps::before {
+        display: none;
+    }
+    
+    .why-img,
+    .why-img-main {
+        height: 300px;
+        font-size: 6rem;
+    }
+
+    /* Projects Page */
+    .projects-masonry {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .proj-card.tall {
+        grid-row: span 1;
+    }
+    
+    .proj-card.tall .proj-img {
+        height: 260px;
+    }
+
+    /* Contact Page */
+    .contact-form-wrap {
+        padding: 2rem;
+    }
+}
+
+/* ===========================
+   BREAKPOINT: Small Mobile (480px)
+=========================== */
+@media (max-width: 480px) {
+    .container { padding: 0 1.2rem; }
+
+    /* Hero */
+    .hero { padding-top: 90px; }
+    .hero-title { font-size: 2.5rem; }
+    .hero-desc { font-size: 0.95rem; margin-bottom: 2rem; }
+    .hero-badge {
+        font-size: 0.7rem;
+        padding: 0.3rem 0.8rem;
+        letter-spacing: 0.1em;
+    }
+
+    /* Reusables */
+    .section-title { font-size: 2rem; }
+    .section-desc { font-size: 0.9rem; }
+
+    /* Page Hero Background Text */
+    .page-hero-bg-text {
+        font-size: 6rem;
+    }
+
+    /* Home Page elements */
+    .stat-number { font-size: 2rem; }
+    .stat-box .num { font-size: 2.8rem; }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .about-badge {
+        width: 90px;
+        height: 90px;
+        padding: 0.8rem;
+        right: 0.5rem;
+        bottom: 0.5rem;
+    }
+
+    .about-badge-num { font-size: 1.6rem; }
+    .cta-title { font-size: 1.8rem; }
+    
+    .about-img-placeholder,
+    .about-img-main,
+    .story-img-placeholder,
+    .story-img-main {
+        height: 240px;
+    }
+
+    /* About Page team & timeline */
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .timeline-item {
+        padding-bottom: 2rem;
+        padding-left: 1rem;
+    }
+    
+    .timeline-item::before {
+        left: -1.5rem; /* Aligns exactly with timeline padding-left */
+    }
+
+    /* Services Page process */
+    .process-steps {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .service-full-card {
+        flex-direction: column;
+        gap: 1.2rem;
+        padding: 2rem;
+    }
+    
+    .why-img,
+    .why-img-main {
+        height: 220px;
+    }
+
+    /* Projects Page */
+    .projects-masonry {
+        grid-template-columns: 1fr;
+    }
+
+    /* Contact Page */
+    .contact-form-wrap {
+        padding: 1.5rem;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    /* Extra Small Mobile (360px) */
+    @media (max-width: 360px) {
+        .container { padding: 0 0.8rem; }
+        .hero-title { font-size: 2.2rem; }
+        .section-title { font-size: 1.8rem; }
+        .services-full-grid { grid-template-columns: 1fr; }
+        .projects-masonry { grid-template-columns: 1fr; }
+    }
+}
